@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
+import Slider from "../../components/slider/Slider";
 
-// import Carousel from "../../components/carousel/Carousel";
 import "./home.css";
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
     <div className="home-container">
       <h1 className="home-title">Ozark Airbnb</h1>
 
-      {/* <Carousel /> */}
+      <Slider />
 
       <h2 className="home-bio-title">Find your next home away from home!</h2>
 
