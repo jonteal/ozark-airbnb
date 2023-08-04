@@ -1,0 +1,141 @@
+/* Contact component CSS */
+
+.contact {
+  height: 100vh;
+  position: relative;
+  text-align: start;
+}
+
+.contact-bg {
+  width: 20px;
+  height: 100%;
+  position: absolute;
+}
+
+.contact-wrapper {
+  padding: 50px;
+  display: flex;
+}
+
+.contact-left {
+  flex: 1;
+  padding-top: 2rem;
+}
+
+.contact-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+  text-align: start;
+}
+
+.contact-title {
+  font-size: 45px;
+  width: 80%;
+  text-align: start;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  margin: 50px 0px;
+  font-weight: 300;
+  width: 70%;
+}
+
+.contact-icon {
+  width: auto;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.contact-desc {
+  font-weight: 200;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+textarea {
+  width: 100%;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.button {
+  border: none;
+  padding: 10px;
+  background-color: #2D3142;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+input:focus {
+  background-color: rgb(255, 255, 125);
+}
+
+@media screen and (max-width: 480px) {
+  .contact-wrapper {
+      flex-direction: column;
+      padding: 0px 50px;
+  }
+
+  .contact-right {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      padding-top: 0px;
+  }
+
+  .contact-title {
+      font-size: 40px;
+      margin-top: 12%;
+      text-align: start;
+  }
+
+  .contact-info-item {
+      margin: 15px 0px;
+      width: 100%;
+  }
+
+  .contact-desc {
+      display: none;
+  }
+
+  form {
+      margin-top: 0px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      text-align: start;
+      margin-bottom: 5px;
+  }
+
+  input {
+      width: 100%;
+      height: 40px;
+      margin: 10px;
+      margin-left: 0;
+  }
+
+  button {
+      margin-top: 10px;
+  }
+}

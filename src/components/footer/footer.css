@@ -1,0 +1,34 @@
+.footer-container {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-item-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60px;
+  /* justify-content: space-between; */
+}
+
+.footer-header {
+  font-weight: bold;
+}
+
+.footer-social-icon {
+  width: 25px;
+  height: auto;
+  margin: 2.5px;
+}

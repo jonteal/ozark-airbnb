@@ -1,0 +1,52 @@
+.navigation-container {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.logo-container {
+  height: 100%;
+  width: 70px;    
+  padding: 25px;
+}
+
+.logo {
+  width: 35px;
+  height: auto;
+}
+
+.nav-links {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  padding: 10px 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(31, 31, 31);
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-book-button {
+  border: none;
+  padding: 8px 20px;
+  background-color: #2D3142;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  font-weight: lighter;
+  transition: 0.2s;
+}
+
+.nav-book-button:hover {
+  background-color: #555d80;
+}
