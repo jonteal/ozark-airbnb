@@ -15,20 +15,18 @@ const Home = () => {
 
       <div>
         <p className="home-bio-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
-          facere rerum nostrum eos ea facilis aspernatur dolorum eaque magni,
-          expedita dolor! Deleniti odio aliquam in consequatur, aperiam quam,
-          non alias inventore iusto dolor repellendus unde beatae vero, nesciunt
-          porro. Totam soluta commodi, quis et animi vero perspiciatis officia
-          corporis eligendi!
+          Journey away to a beautiful and often missed oasis within the natural
+          state of Arkansas. Here you'll find a multitude of activities,
+          amenities, and enriching experiences ranging from lake front
+          relaxation all the way to world class mountain bike excursions.
         </p>
 
         <p className="home-bio-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
-          ullam veniam architecto soluta dolor itaque quasi quos, excepturi modi
-          nostrum fugit distinctio iure nam minus delectus beatae laboriosam.
-          Omnis expedita provident officia dolore tempore molestias minus totam,
-          voluptas accusantium nam?
+          A perfect destination for family adventures, romantic getaways, or
+          even the solo road trip that you've been meaning to take but just
+          haven't committed to just yet. An endless cultural palette of diverse
+          food, music, and art await you! Contact us today to book your next
+          trip!
         </p>
       </div>
 
