@@ -7,8 +7,9 @@ const Home = () => {
   return (
     <div className="home-container">
       <h1 className="home-title">Ozark Airbnb</h1>
-
-      <Slider />
+      <div className="slider-container">
+        <Slider />
+      </div>
 
       <h2 className="home-bio-title">Find your next home away from home!</h2>
 

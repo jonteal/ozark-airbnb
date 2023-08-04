@@ -2,14 +2,15 @@ import React from "react";
 import SliderImage1 from "../../assets/sliderImages/img1.jpeg";
 import SliderImage2 from "../../assets/sliderImages/img2.jpeg";
 import SliderImage3 from "../../assets/sliderImages/img3.jpeg";
-import SliderImage4 from "../../assets/sliderImages/img4.jpeg";
-import SliderImage5 from "../../assets/sliderImages/img5.jpeg";
+import SliderImage4 from "../../assets/sliderImages/img5.jpeg";
+
+import "./slider.css";
 
 const Slider = () => {
   return (
     <div
       id="carouselExampleIndicators"
-      className="carousel slide"
+      className="carousel slide carousel-inner-container"
       data-ride="carousel"
     >
       <ol className="carousel-indicators">
@@ -21,7 +22,6 @@ const Slider = () => {
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
       </ol>
       <div className="carousel-inner">
         <div className="carousel-item active">
@@ -43,9 +43,6 @@ const Slider = () => {
             src={SliderImage4}
             alt="Fourth slide"
           />
-        </div>
-        <div className="carousel-item">
-          <img className="d-block w-100" src={SliderImage5} alt="Fifth slide" />
         </div>
       </div>
       <a
