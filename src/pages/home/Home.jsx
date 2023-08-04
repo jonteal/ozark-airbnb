@@ -1,15 +1,11 @@
 import { Outlet } from "react-router";
 
-import MainCarousel from "../../components/mainCarousel/mainCarousel";
-
 import "./home.css";
 
 const Home = () => {
   return (
     <div className="home-container">
       <h1 className="home-title">Ozark Airbnb</h1>
-
-      <MainCarousel />
 
       <h2 className="home-bio-title">Find your next home away from home!</h2>
 
