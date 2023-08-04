@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
 
 import "./home.css";
-import { Carousel } from "../../components/carousel/Carousel";
+import Carousel from "../../components/carousel/Carousel";
 
 const Home = () => {
   return (
