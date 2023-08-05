@@ -5,7 +5,7 @@ import "./home.css";
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <>
       <h1 className="home-title">Ozark Airbnb</h1>
       <div className="slider-container">
         <Slider />
@@ -51,7 +51,7 @@ const Home = () => {
       </p>
 
       <Outlet />
-    </div>
+    </>
   );
 };
 

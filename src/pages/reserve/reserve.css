@@ -1,0 +1,31 @@
+.main-reserve-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name-input-container,
+.number-email-container,
+.additional-info-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-input-left {
+    margin-right: 10px;
+}
+
+.info-input-right {
+    margin-left: 10px;
+}
+
+.reserve-btn {
+    border: none;
+    padding: 8px 20px;
+    background-color: #2D3142;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    font-weight: lighter;
+    transition: 0.2s;
+}
