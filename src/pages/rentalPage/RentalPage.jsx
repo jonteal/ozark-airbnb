@@ -5,12 +5,13 @@ import {
   // FaLocationDot,
   FaStar,
   // FaRegBuilding,
-  // FaUserGroup,
+  FaUserGroup,
   FaBed,
   FaDoorClosed,
   FaRegCalendarCheck,
   FaUserLarge,
   // FaBath,
+  FaElevator,
 } from "react-icons/fa6";
 
 import "./rentalPage.css";
@@ -18,7 +19,6 @@ import "./rentalPage.css";
 const RentalPage = () => {
   const { id } = useParams();
   const [properties, setProperties] = useState([]);
-  const [property, setProperty] = useState({});
 
   const getData = () => {
     fetch("/data.json", {
@@ -32,13 +32,13 @@ const RentalPage = () => {
       })
       .then(function (myJson) {
         setProperties(myJson.properties);
-        console.log("properties", properties);
       });
   };
 
   useEffect(() => {
     getData();
   }, []);
+
   const selectedProperty = properties?.filter(
     (property) => property.id === id
   )[0];
@@ -46,7 +46,7 @@ const RentalPage = () => {
   return (
     <div className="rentalPage-main-container">
       <div className="rentalPage-image-container">
-        <img />
+        <img className="rentalPage-image" src={selectedProperty?.image} />
       </div>
       <div className="rentalPage-information-container">
         <div className="rentalPage-information-main-section">
@@ -58,7 +58,7 @@ const RentalPage = () => {
               <FaStar className="rentalPage-rating-star" />
               <FaStar className="rentalPage-rating-star" />
             </div>
-            <div>(10 reviews)</div>
+            <div className="rentalPage-review-count">(10 reviews)</div>
           </div>
           <div>
             <h1 className="rentalPage-property-name">
@@ -122,7 +122,7 @@ const RentalPage = () => {
             </p>
 
             <h3 className="rentalPage-section-header">Check in and out</h3>
-            <p className="rentalPage-neighborhood-section-body">
+            <p className="rentalPage-neighborhood-section-check-in">
               Check in 3:00 pm
             </p>
             <p className="rentalPage-neighborhood-section-body">
@@ -137,32 +137,47 @@ const RentalPage = () => {
                 <div>
                   <FaDoorClosed className="rentalPage-property-feature-icon" />
                 </div>
-                <div>1 Bedroom</div>
+                <div className="rentalPage-property-feature-text">
+                  {selectedProperty?.numOfRooms} Bedroom
+                  {selectedProperty?.numOfRooms > 1 ? "s" : ""}
+                </div>
               </div>
               <div className="rentalPage-property-feature">
                 <div>
                   <FaBed className="rentalPage-property-feature-icon" />
                 </div>
-                <div>2 Beds</div>
+                <div className="rentalPage-property-feature-text">
+                  {selectedProperty?.numOfBeds} Bed
+                  {selectedProperty?.numOfBeds > 1 ? "s" : ""}
+                </div>
               </div>
             </div>
 
             <hr />
 
             <h3 className="rentalPage-section-header">Amenities</h3>
-            <div className="rentalPage-amenities-container"></div>
+            <div className="rentalPage-amenities-container">
+              {selectedProperty?.ameneties
+                .filter((a) => a.present === true)
+                .map((a) => (
+                  <div className="rentalPage-amenety-item-container">
+                    <div></div>
+                    <p>{a.name}</p>
+                  </div>
+                ))}
+            </div>
           </div>
         </div>
         <div className="rentalPage-information-right-sidebar">
           <div className="rentalPage-main-date-container">
             <div className="rentalPage-dates-icon-container">
-              <FaRegCalendarCheck />
+              <FaRegCalendarCheck className="rentalPage-dates-icon" />
             </div>
             <div className="rentalPage-dates-container">
-              <p>Aug 17, 2023</p>
-              <p>-</p>
-              <p>Aug 18, 2023</p>
-              <p>X</p>
+              <p className="rentalPage-date">Start date</p>
+              <p className="rentalPage-date">-</p>
+              <p className="rentalPage-date">End date</p>
+              {/* <button className="rentalPage-date-delete-btn">X</button> */}
             </div>
           </div>
           <div className="rentalPage-numOfGuests-container">

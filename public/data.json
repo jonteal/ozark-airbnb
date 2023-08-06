@@ -9,10 +9,105 @@
       "guestSize": "2-4",
       "numOfBeds": "2",
       "numOfBaths": "1",
+      "numOfRooms": "2",
       "price": "$100",
       "rating": "5",
       "numOfReviews": "10",
-      "image": ""
+      "image": "../images/stock1.jpg",
+      "ameneties": [
+        {
+          "name": "Elevator",
+          "present": false
+        },
+        {
+          "name": "Parking",
+          "present": true
+        },
+        {
+          "name": "AC",
+          "present": true
+        },
+        {
+          "name": "Heat",
+          "present": true
+        },
+        {
+          "name": "Wifi",
+          "present": true
+        },
+        {
+          "name": "Internet",
+          "present": true
+        },
+        {
+          "name": "Kitchen",
+          "present": true
+        },
+        {
+          "name": "Washer",
+          "present": true
+        },
+        {
+          "name": "Dryer",
+          "present": true
+        },
+        {
+          "name": "TV",
+          "present": true
+        },
+        {
+          "name": "First Aid",
+          "present": true
+        },
+        {
+          "name": "Smoke Detector",
+          "present": true
+        },
+        {
+          "name": "Fire Extinguisher",
+          "present": true
+        },
+        {
+          "name": "Private Entrance",
+          "present": false
+        },
+        {
+          "name": "Self Checkin",
+          "present": true
+        },
+        {
+          "name": "Pets",
+          "present": false
+        },
+        {
+          "name": "Microwave",
+          "present": true
+        },
+        {
+          "name": "Coffee Maker",
+          "present": true
+        },
+        {
+          "name": "Refridgerator",
+          "present": true
+        },
+        {
+          "name": "Dishwasher",
+          "present": true
+        },
+        {
+          "name": "Oven",
+          "present": true
+        },
+        {
+          "name": "Stove",
+          "present": true
+        },
+        {
+          "name": "Patio",
+          "present": true
+        }
+      ]
     },
     {
       "id": "2",
@@ -23,10 +118,105 @@
       "guestSize": "3-6",
       "numOfBeds": "3",
       "numOfBaths": "2",
+      "numOfRooms": "2",
       "price": "$150",
       "rating": "5",
       "numOfReviews": "8",
-      "image": ""
+      "image": "../images/stock3.jpg",
+      "ameneties": [
+        {
+          "name": "Elevator",
+          "present": false
+        },
+        {
+          "name": "Parking",
+          "present": true
+        },
+        {
+          "name": "AC",
+          "present": true
+        },
+        {
+          "name": "Heat",
+          "present": true
+        },
+        {
+          "name": "Wifi",
+          "present": true
+        },
+        {
+          "name": "Internet",
+          "present": true
+        },
+        {
+          "name": "Kitchen",
+          "present": true
+        },
+        {
+          "name": "Washer",
+          "present": true
+        },
+        {
+          "name": "Dryer",
+          "present": true
+        },
+        {
+          "name": "TV",
+          "present": true
+        },
+        {
+          "name": "First Aid",
+          "present": true
+        },
+        {
+          "name": "Smoke Detector",
+          "present": true
+        },
+        {
+          "name": "Fire Extinguisher",
+          "present": true
+        },
+        {
+          "name": "Private Entrance",
+          "present": false
+        },
+        {
+          "name": "Self-Checkin",
+          "present": true
+        },
+        {
+          "name": "Pets",
+          "present": false
+        },
+        {
+          "name": "Microwave",
+          "present": true
+        },
+        {
+          "name": "Coffee Maker",
+          "present": true
+        },
+        {
+          "name": "Refridgerator",
+          "present": true
+        },
+        {
+          "name": "Dishwasher",
+          "present": true
+        },
+        {
+          "name": "Oven",
+          "present": true
+        },
+        {
+          "name": "Stove",
+          "present": true
+        },
+        {
+          "name": "Patio",
+          "present": true
+        }
+      ]
     },
     {
       "id": "3",
@@ -37,10 +227,105 @@
       "guestSize": "2-4",
       "numOfBeds": "2",
       "numOfBaths": "1",
+      "numOfRooms": "1",
       "price": "$125",
       "rating": "5",
       "numOfReviews": "12",
-      "image": ""
+      "image": "../images/stock4.jpg",
+      "ameneties": [
+        {
+          "name": "Elevator",
+          "present": false
+        },
+        {
+          "name": "Parking",
+          "present": true
+        },
+        {
+          "name": "AC",
+          "present": true
+        },
+        {
+          "name": "Heat",
+          "present": true
+        },
+        {
+          "name": "Wifi",
+          "present": true
+        },
+        {
+          "name": "Internet",
+          "present": true
+        },
+        {
+          "name": "Kitchen",
+          "present": true
+        },
+        {
+          "name": "Washer",
+          "present": true
+        },
+        {
+          "name": "Dryer",
+          "present": true
+        },
+        {
+          "name": "TV",
+          "present": true
+        },
+        {
+          "name": "First Aid",
+          "present": true
+        },
+        {
+          "name": "Smoke Detector",
+          "present": true
+        },
+        {
+          "name": "Fire Extinguisher",
+          "present": true
+        },
+        {
+          "name": "Private Entrance",
+          "present": false
+        },
+        {
+          "name": "Self-Checkin",
+          "present": true
+        },
+        {
+          "name": "Pets",
+          "present": false
+        },
+        {
+          "name": "Microwave",
+          "present": true
+        },
+        {
+          "name": "Coffee Maker",
+          "present": true
+        },
+        {
+          "name": "Refridgerator",
+          "present": true
+        },
+        {
+          "name": "Dishwasher",
+          "present": true
+        },
+        {
+          "name": "Oven",
+          "present": true
+        },
+        {
+          "name": "Stove",
+          "present": true
+        },
+        {
+          "name": "Patio",
+          "present": true
+        }
+      ]
     },
     {
       "id": "4",
@@ -51,10 +336,105 @@
       "guestSize": "2",
       "numOfBeds": "1",
       "numOfBaths": "1",
+      "numOfRooms": "1",
       "price": "$100",
       "rating": "5",
       "numOfReviews": "15",
-      "image": ""
+      "image": "../images/stock5.jpg",
+      "ameneties": [
+        {
+          "name": "Elevator",
+          "present": false
+        },
+        {
+          "name": "Parking",
+          "present": true
+        },
+        {
+          "name": "AC",
+          "present": true
+        },
+        {
+          "name": "Heat",
+          "present": true
+        },
+        {
+          "name": "Wifi",
+          "present": true
+        },
+        {
+          "name": "Internet",
+          "present": true
+        },
+        {
+          "name": "Kitchen",
+          "present": true
+        },
+        {
+          "name": "Washer",
+          "present": true
+        },
+        {
+          "name": "Dryer",
+          "present": true
+        },
+        {
+          "name": "TV",
+          "present": true
+        },
+        {
+          "name": "First Aid",
+          "present": true
+        },
+        {
+          "name": "Smoke Detector",
+          "present": true
+        },
+        {
+          "name": "Fire Extinguisher",
+          "present": true
+        },
+        {
+          "name": "Private Entrance",
+          "present": false
+        },
+        {
+          "name": "Self-Checkin",
+          "present": true
+        },
+        {
+          "name": "Pets",
+          "present": false
+        },
+        {
+          "name": "Microwave",
+          "present": true
+        },
+        {
+          "name": "Coffee Maker",
+          "present": true
+        },
+        {
+          "name": "Refridgerator",
+          "present": true
+        },
+        {
+          "name": "Dishwasher",
+          "present": true
+        },
+        {
+          "name": "Oven",
+          "present": true
+        },
+        {
+          "name": "Stove",
+          "present": true
+        },
+        {
+          "name": "Patio",
+          "present": true
+        }
+      ]
     },
     {
       "id": "5",
@@ -65,10 +445,105 @@
       "guestSize": "2-4",
       "numOfBeds": "2",
       "numOfBaths": "2",
+      "numOfRooms": "2",
       "price": "$150",
       "rating": "5",
       "numOfReviews": "9",
-      "image": ""
+      "image": "../images/stock6.jpg",
+      "ameneties": [
+        {
+          "name": "Elevator",
+          "present": false
+        },
+        {
+          "name": "Parking",
+          "present": true
+        },
+        {
+          "name": "AC",
+          "present": true
+        },
+        {
+          "name": "Heat",
+          "present": true
+        },
+        {
+          "name": "Wifi",
+          "present": true
+        },
+        {
+          "name": "Internet",
+          "present": true
+        },
+        {
+          "name": "Kitchen",
+          "present": true
+        },
+        {
+          "name": "Washer",
+          "present": true
+        },
+        {
+          "name": "Dryer",
+          "present": true
+        },
+        {
+          "name": "TV",
+          "present": true
+        },
+        {
+          "name": "First Aid",
+          "present": true
+        },
+        {
+          "name": "Smoke Detector",
+          "present": true
+        },
+        {
+          "name": "Fire Extinguisher",
+          "present": true
+        },
+        {
+          "name": "Private Entrance",
+          "present": false
+        },
+        {
+          "name": "Self-Checkin",
+          "present": true
+        },
+        {
+          "name": "Pets",
+          "present": false
+        },
+        {
+          "name": "Microwave",
+          "present": true
+        },
+        {
+          "name": "Coffee Maker",
+          "present": true
+        },
+        {
+          "name": "Refridgerator",
+          "present": true
+        },
+        {
+          "name": "Dishwasher",
+          "present": true
+        },
+        {
+          "name": "Oven",
+          "present": true
+        },
+        {
+          "name": "Stove",
+          "present": true
+        },
+        {
+          "name": "Patio",
+          "present": true
+        }
+      ]
     }
   ]
 }

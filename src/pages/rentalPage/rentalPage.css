@@ -1,56 +1,89 @@
 .rentalPage-main-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.rentalPage-image-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 15px;
+  /* width: 100px;
+  height: 100px; */
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.rentalPage-image {
+object-fit: cover;
+  width: 100%;
+  object-position: 40% 10%;
+  margin-top: -100px;
 }
 
 .rentalPage-information-container {
-    margin-left: 3%;
-    margin-right: 3%;
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .rentalPage-information-main-section {
-    width: 70%;
+  width: 70%;
 }
 
 .rentalPage-information-right-sidebar {
-    width: 30%;
+  width: 30%;
+  padding: 30px;
+  border-radius: 10px;
+  height: 280px;
+  margin-left: 5%;
+  margin-top: 3%;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .rentalPage-stars-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .rentalPage-stars {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .rentalPage-rating-star {
-    color: rgb(241, 211, 90);
-    margin-right: 2px; 
+  color: rgb(241, 211, 90);
+  margin-right: 2px;
+  font-size: 1.4rem;
+}
+
+.rentalPage-review-count {
+  margin-left: 10px;
+  font-size: 0.9rem;
 }
 
 .rentalPage-property-name {
-    font-size: 1.5rem;
-    margin-left: 10px;
+  font-size: 1.7rem;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .rentalPage-description-header {
-    font-weight: bold;
-    font-size: 0.9rem;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
 .rentalPage-description-body {
-    font-size: 0.9rem;
-    color: black;
+  font-size: 0.9rem;
+  color: black;
 }
 
 .rentalPage-section-header {
-    font-weight: bold;
-    font-size: 0.8rem;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
 /* .rentalPage-space-description-list {
@@ -59,65 +92,137 @@
 } */
 
 .rentalPage-space-description-item {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 .rentalPage-guest-access-body,
 .rentalPage-neighborhood-section-body {
-    font-size: 0.9rem;
-    color: black;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.rentalPage-neighborhood-section-check-in {
+  margin-bottom: 3px;
+  font-size: 0.8rem;
+  color: black;
 }
 
 .rentalPage-property-features-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .rentalPage-property-feature {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
 }
 
 .rentalPage-property-feature-icon {
-    font-size: 1.2rem;
-    width: 100%;
-    color: gray;
+  font-size: 1.2rem;
+  width: 100%;
+  color: gray;
+}
+
+.rentalPage-property-feature-text {
+  font-size: 0.9rem;
+  color: gray;
 }
 
 .rentalPage-amenities-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.rentalPage-amenety-item-container {
+  flex: 1 0 21%;
+  margin: 5px;
 }
 
 .rentalPage-main-date-container {
-    display: flex;
-    flex-direction: row;
-    border: 1px gray solid;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.rentalPage-dates-icon-container {
+  width: 20%;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .rentalPage-dates-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  border: 1px solid lightgray;
+  padding: 15px;
+}
+
+.rentalPage-dates-icon {
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.rentalPage-date {
+  margin: 0 5px;
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.rentalPage-date-delete-btn {
+  background-color: white;
+  padding: 5px;
+  border: none;
 }
 
 .rentalPage-numOfGuests-container {
-    border: 1px gray solid;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .rentalPage-select {
-    width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  border: 1px solid lightgray;
+  padding: 15px;
 }
 
 .rentalPage-numOfGuests-icon {
-    width: 15%;
+  width: 100%;
+  color: gray;
 }
 
 .rentalPage-search-button {
-    width: 100%;
+  width: 100%;
+  padding: 20px 20px;
+  font-size: 0.8rem;
+  border: none;
+  color: darkgray;
 }
 
-/* .rentalPage-numOfGuests-icon-container {
-} */
+.rentalPage-numOfGuests-icon-container {
+  width: 20%;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
