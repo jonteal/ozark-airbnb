@@ -18,6 +18,7 @@ import "./rentalPage.css";
 const RentalPage = () => {
   const { id } = useParams();
   const [properties, setProperties] = useState([]);
+  const [property, setProperty] = useState({});
 
   const getData = () => {
     fetch("/data.json", {
@@ -27,17 +28,20 @@ const RentalPage = () => {
       },
     })
       .then(function (response) {
-        console.log(response);
         return response.json();
       })
       .then(function (myJson) {
-        console.log(myJson);
-        setProperties(myJson);
+        setProperties(myJson.properties);
+        console.log("properties", properties);
       });
   };
+
   useEffect(() => {
     getData();
   }, []);
+  const selectedProperty = properties?.filter(
+    (property) => property.id === id
+  )[0];
 
   return (
     <div className="rentalPage-main-container">
@@ -57,7 +61,9 @@ const RentalPage = () => {
             <div>(10 reviews)</div>
           </div>
           <div>
-            <h1 className="rentalPage-property-name">Ozark House</h1>
+            <h1 className="rentalPage-property-name">
+              {selectedProperty?.name}
+            </h1>
             <h2 className="rentalPage-description-header">Description</h2>
             <p className="rentalPage-description-body">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
