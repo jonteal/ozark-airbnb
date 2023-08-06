@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import OzarkHouse from "../../assets/images/stock1.jpg";
 import WesternWoods from "../../assets/images/stock3.jpg";
 import TripleWide from "../../assets/images/stock4.jpg";
@@ -92,8 +94,31 @@ const rentalProperties = [
 ];
 
 import "./rentals.css";
+import { Link } from "react-router-dom";
 
 const Rentals = () => {
+  const [data, setData] = useState([]);
+  const getData = () => {
+    fetch("/data.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then(function (response) {
+        console.log(response);
+        return response.json();
+      })
+      .then(function (myJson) {
+        console.log(myJson);
+        setData(myJson);
+      });
+  };
+  useEffect(() => {
+    getData();
+  }, []);
+
+  console.log("data: ", data);
   return (
     <div className="rentals-container">
       {rentalProperties.map((property) => (
@@ -161,7 +186,10 @@ const Rentals = () => {
                   <FaStar className="rating-star" />
                   <FaStar className="rating-star" />
                 </div>
-                <p className="review-count">(10 reviews)</p>
+                <p className="review-count">
+                  ({property.numOfReviews} review
+                  {property.numOfReviews > 1 ? "s" : ""})
+                </p>
               </div>
               <div className="property-item-pricing-container">
                 <p className="property-item-pricing-from">from</p>
@@ -174,7 +202,10 @@ const Rentals = () => {
                 <p className="property-item-terms-text">
                   Additional charges may apply
                 </p>
-                <button className="property-item-book-now-btn">Book Now</button>
+                {/* <button className="property-item-book-now-btn">
+                  <a href={`/rentals/${property.id}`}>Book Now</a>
+                </button> */}
+                <Link to={`/rentals/${property.id}`}>BOOK NOW</Link>
               </div>
             </div>
           </div>

@@ -9,6 +9,7 @@ import Rentals from "./pages/rentals/Rentals";
 import Management from "./pages/management/Management";
 import Faq from "./pages/faq/Faq";
 import Reserve from "./pages/reserve/Reserve";
+import RentalPage from "./pages/rentalPage/RentalPage";
 import NotFound from "./pages/notFound/NotFound";
 
 import "./App.css";
@@ -23,6 +24,7 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
             <Route path="rentals" element={<Rentals />} />
+            <Route path="rentals/:id" element={<RentalPage />} />
             <Route path="management" element={<Management />} />
             <Route path="reserve" element={<Reserve />} />
             <Route path="faq" element={<Faq />} />

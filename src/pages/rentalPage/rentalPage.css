@@ -1,0 +1,123 @@
+.rentalPage-main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.rentalPage-information-container {
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: row;
+}
+
+.rentalPage-information-main-section {
+    width: 70%;
+}
+
+.rentalPage-information-right-sidebar {
+    width: 30%;
+}
+
+.rentalPage-stars-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.rentalPage-stars {
+    display: flex;
+    flex-direction: row;
+}
+
+.rentalPage-rating-star {
+    color: rgb(241, 211, 90);
+    margin-right: 2px; 
+}
+
+.rentalPage-property-name {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.rentalPage-description-header {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.rentalPage-description-body {
+    font-size: 0.9rem;
+    color: black;
+}
+
+.rentalPage-section-header {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* .rentalPage-space-description-list {
+    list-style: none;
+    margin-left: 0;
+} */
+
+.rentalPage-space-description-item {
+    font-size: 0.8rem;
+}
+
+.rentalPage-guest-access-body,
+.rentalPage-neighborhood-section-body {
+    font-size: 0.9rem;
+    color: black;
+}
+
+.rentalPage-property-features-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.rentalPage-property-feature {
+    display: flex;
+    flex-direction: column;
+}
+
+.rentalPage-property-feature-icon {
+    font-size: 1.2rem;
+    width: 100%;
+    color: gray;
+}
+
+.rentalPage-amenities-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.rentalPage-main-date-container {
+    display: flex;
+    flex-direction: row;
+    border: 1px gray solid;
+}
+
+.rentalPage-dates-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.rentalPage-numOfGuests-container {
+    border: 1px gray solid;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.rentalPage-select {
+    width: 85%;
+}
+
+.rentalPage-numOfGuests-icon {
+    width: 15%;
+}
+
+.rentalPage-search-button {
+    width: 100%;
+}
+
+/* .rentalPage-numOfGuests-icon-container {
+} */
