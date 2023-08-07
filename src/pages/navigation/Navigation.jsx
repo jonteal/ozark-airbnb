@@ -33,7 +33,7 @@ const Navigation = () => {
           <Link className="nav-link" to="contact">
             CONTACT
           </Link>
-          <Link className="nav-link nav-book-button" to="reserve">
+          <Link className="nav-link nav-book-button" to="rentals">
             BOOK WITH US
           </Link>
         </div>
