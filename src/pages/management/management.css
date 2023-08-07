@@ -18,3 +18,12 @@
     margin-right: 10%;
     font-size: 1.2rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .mgmt-page-title {
+        text-align: center;
+        font-family: 'Square Peg', cursive;
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+}

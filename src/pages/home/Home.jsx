@@ -1,5 +1,6 @@
 import { Outlet } from "react-router";
 import Slider from "../../components/slider/Slider";
+import { Link } from "react-router-dom";
 
 import "./home.css";
 
@@ -31,7 +32,9 @@ const Home = () => {
       </div>
 
       <div className="home-button-container">
-        <button className="home-book-button">BOOK WITH US</button>
+        <Link to="rentals" className="home-book-button">
+          BOOK WITH US
+        </Link>
       </div>
 
       <div className="home-social-text">

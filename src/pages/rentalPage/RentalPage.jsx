@@ -160,7 +160,10 @@ const RentalPage = () => {
               {selectedProperty?.ameneties
                 .filter((a) => a.present === true)
                 .map((a) => (
-                  <div className="rentalPage-amenety-item-container">
+                  <div
+                    key={a.name}
+                    className="rentalPage-amenety-item-container"
+                  >
                     <div></div>
                     <p>{a.name}</p>
                   </div>

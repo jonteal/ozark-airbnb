@@ -45,7 +45,7 @@ const Contact = () => {
           <div className="contact-info">
             <div className="contact-info-item">
               <img src={PhoneIcon} alt="Phone icon" className="contact-icon" />
-              +1 (479) 601-3157
+              +1 (800) 555-5555
             </div>
             <div className="contact-info-item">
               <img src={EmailIcon} alt="Email icon" className="contact-icon" />
