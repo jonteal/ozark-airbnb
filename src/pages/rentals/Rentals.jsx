@@ -1,11 +1,5 @@
 import { useEffect, useState } from "react";
 
-import OzarkHouse from "../../assets/images/stock1.jpg";
-import WesternWoods from "../../assets/images/stock3.jpg";
-import TripleWide from "../../assets/images/stock4.jpg";
-import TheGreatEscape from "../../assets/images/stock5.jpg";
-import LakesideView from "../../assets/images/stock6.jpg";
-
 import {
   FaLocationDot,
   FaStar,
@@ -15,89 +9,11 @@ import {
   FaBath,
 } from "react-icons/fa6";
 
-const rentalProperties = [
-  {
-    id: 1,
-    name: "Ozark House",
-    description:
-      "An organic and rustic home away from a home that will be the break from reality that you have been waiting on.",
-    location: "Bella Vista, AR",
-    type: "House",
-    guestSize: "2-4",
-    numOfBeds: 2,
-    numOfBaths: 1,
-    price: "$100",
-    rating: "5",
-    numOfReviews: 10,
-    image: OzarkHouse,
-  },
-  {
-    id: 2,
-    name: "Western Woods",
-    description:
-      "Nestled in the woods of the Ozarks, a quiet and quaint experience awaits you.",
-    location: "Bella Vista, AR",
-    type: "House",
-    guestSize: "3-6",
-    numOfBeds: 3,
-    numOfBaths: 2,
-    price: "$150",
-    rating: "5",
-    numOfReviews: 8,
-    image: WesternWoods,
-  },
-  {
-    id: 3,
-    name: "Triple Wide",
-    description:
-      "A single studio space with character and class within walking distance of Beaver Lake.",
-    location: "Rogers, AR",
-    type: "House",
-    guestSize: "2-4",
-    numOfBeds: 2,
-    numOfBaths: 1,
-    price: "$125",
-    rating: "5",
-    numOfReviews: 12,
-    image: TripleWide,
-  },
-  {
-    id: 4,
-    name: "The Great Escape",
-    description:
-      "The escape for reality that you have been dreaming of that sits right outside of the heart of the Ozarks.",
-    location: "Fayetteville, AR",
-    type: "House",
-    guestSize: "2",
-    numOfBeds: 1,
-    numOfBaths: 1,
-    price: "$100",
-    rating: "5",
-    numOfReviews: 15,
-    image: TheGreatEscape,
-  },
-  {
-    id: 5,
-    name: "Lakeside View",
-    description:
-      "A romantic, vibrant and modern space within walking distance of Beaver Lake",
-    location: "Rogers, AR",
-    type: "Apartment",
-    guestSize: "2-4",
-    numOfBeds: 2,
-    numOfBaths: 2,
-    price: "$150",
-    rating: "5",
-    numOfReviews: 9,
-    image: LakesideView,
-  },
-];
-
 import "./rentals.css";
 import { Link } from "react-router-dom";
 
 const Rentals = () => {
-  const [data, setData] = useState([]);
+  const [properties, setProperties] = useState([]);
   const getData = () => {
     fetch("/data.json", {
       headers: {
@@ -110,18 +26,17 @@ const Rentals = () => {
         return response.json();
       })
       .then(function (myJson) {
-        console.log(myJson);
-        setData(myJson);
+        console.log(myJson.properties);
+        setProperties(myJson.properties);
       });
   };
   useEffect(() => {
     getData();
   }, []);
 
-  console.log("data: ", data);
   return (
     <div className="rentals-container">
-      {rentalProperties.map((property) => (
+      {properties.map((property) => (
         <div className="property-item-container" key={property.id}>
           <div className="property-item-image-container">
             <img className="property-item-image" src={property.image} alt="" />
@@ -194,7 +109,7 @@ const Rentals = () => {
               <div className="property-item-pricing-container">
                 <p className="property-item-pricing-from">from</p>
                 <p className="property-item-pricing-rate-line">
-                  <span className="property-item-price">$100</span>{" "}
+                  <span className="property-item-price">{property.price}</span>{" "}
                   <span className="property-item-per-night-text">
                     per night
                   </span>
@@ -205,7 +120,12 @@ const Rentals = () => {
                 {/* <button className="property-item-book-now-btn">
                   <a href={`/rentals/${property.id}`}>Book Now</a>
                 </button> */}
-                <Link to={`/rentals/${property.id}`}>BOOK NOW</Link>
+                <Link
+                  className="property-item-book-now-btn"
+                  to={`/rentals/${property.id}`}
+                >
+                  BOOK NOW
+                </Link>
               </div>
             </div>
           </div>
